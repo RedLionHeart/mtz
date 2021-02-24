@@ -1,0 +1,97 @@
+.sidenav{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 380px;
+  background-color: $color-grey;
+  display: flex;
+  transform: translateX(-100%);
+  transition: all .5s;
+  @media screen and (max-width: 576px){
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.sidenav.active{
+  transform: translateX(0);
+}
+.sidenav__close-zone{
+  position: relative;
+  padding: 32px 22px;
+  border-right: 2px solid $color-thin-line;
+  cursor: pointer;
+  @media screen and (max-width: 576px){
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 40px 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: none;
+  }
+}
+.sidenav__logo{
+  width: 60px;
+  height: 30px;
+  background: url("../images/base/logo-burger.svg") no-repeat center/contain;
+  @media screen and (max-width: 576px){
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 18px;
+    background: url("../images/base/logo-burger-mobile.svg") no-repeat center/contain;
+  }
+}
+.sidenav__close-button{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: 576px){
+    position: relative;
+    top: 0;
+    left:0;
+    transform: none;
+    //margin: 0 52px 0 0;
+  }
+}
+.sidenav__nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  @media screen and (max-width: 576px){
+    height: 100%;
+  }
+}
+.sidenav__list-item{
+  @media screen and (max-width: 576px){
+    text-align: center;
+  }
+  &+&{
+    margin: 44px 0 0;
+    @media screen and (max-width: 576px){
+      margin: 36px 0 0;
+    }
+    @media screen and (max-height: 600px){
+      margin: 24px 0 0;
+    }
+  }
+}
+.sidenav__link{
+  font-weight: 500;
+  color: $color-white;
+  transition: color .2s ease-in-out;
+  &:hover{
+    color: $color-white-hover;
+  }
+  &:active{
+    color: $color-white-active;
+  }
+}

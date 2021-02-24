@@ -1,0 +1,43 @@
+@import "typography";
+@import "colors";
+@import "elements/elements";
+
+.main{
+  padding: 248px 0 60px;
+  @media screen and (max-width: 991px){
+    padding: 200px 0 36px;
+  }
+}
+.title{
+  color: $color-sections;
+  padding-bottom: 16px;
+  border-bottom: 4px solid $color-line;
+  margin: 0 0 36px;
+  @media screen and (max-width: 768px){
+    margin: 0 0 24px;
+    text-align: center;
+  }
+}
+.title__link{
+  display: block;
+  color: $color-sections;
+  transition: color .2s ease-in-out;
+  &:hover{
+    color: $color-sections-hover;
+  }
+  &:active{
+    color: $color-sections-active;
+  }
+}
+.d-none-lg{
+  display: block;
+  @media screen and (max-width: 991px){
+    display: none;
+  }
+}
+.d-block-lg{
+  display: none;
+  @media screen and (max-width: 991px){
+    display: block;
+  }
+}

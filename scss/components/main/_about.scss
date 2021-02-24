@@ -1,0 +1,9 @@
+.other-pages__main{
+  p{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  p+p{
+    margin: 16px 0 0;
+  }
+}

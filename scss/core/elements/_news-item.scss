@@ -1,0 +1,31 @@
+.news-item{
+
+}
+.news-item--main{
+  .news-item__title{
+    font-weight: bold;
+  }
+}
+.news-item__link{
+
+}
+.news-item__info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-item__date{
+  color: $color-grey;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+}
+.news-item__mark{
+  color: $color-tag;
+  text-transform: uppercase;
+}
+.news-item__title{
+  margin: 12px 0 0;
+  font-weight: 400;
+  @media screen and (max-width: 991px){
+    margin: 8px 0 0;
+  }
+}

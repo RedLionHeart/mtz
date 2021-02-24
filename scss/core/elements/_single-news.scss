@@ -1,0 +1,113 @@
+.single-news__title{
+  @media screen and (max-width: 576px){
+    order: 2;
+    margin: 8px 0 0;
+  }
+}
+.single-news__info{
+  margin: 28px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 576px){
+    order: 1;
+    margin: 0;
+    flex: 0 0 100%;
+  }
+}
+.single-news__date{
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: $color-grey;
+}
+.single-news__mark{
+  text-transform: uppercase;
+  color: $color-tag;
+}
+.single-news__content{
+  margin: 24px 0 0;
+  @media screen and (max-width: 576px){
+    order: 2;
+    margin: 16px 0 0;
+  }
+  p{
+    font-size: 20px;
+    line-height: 28px;
+    color: $color-black;
+  }
+}
+.single-news__content-top{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 24px;
+  @media screen and (max-width: 991px){
+    margin: 0 0 16px;
+  }
+}
+.single-news__img-container{
+  margin: 0 15px;
+  --x-gutter: 60px;
+  flex: 0 0 calc(((100% - var(--x-gutter)) / 3) * 2);
+  max-width: calc(((100% - var(--x-gutter)) / 3) * 2);
+  border-radius: 4px;
+  overflow: hidden;
+  height: 432px;
+  @media screen and (max-width: 991px){
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  @media screen and (max-width: 576px){
+    height: 200px;
+  }
+}
+.single-news__img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.single-news__content-top-text{
+  margin: 0 15px;
+  --x-gutter: 60px;
+  flex: 0 0 calc((100% - var(--x-gutter)) / 3);
+  max-width: calc((100% - var(--x-gutter)) / 3);
+  @media screen and (max-width: 991px){
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 16px 0 0;
+  }
+}
+.single-news__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 48px 0 0;
+  @media screen and (max-width: 576px){
+    order: 2;
+    margin: 16px 0 0;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+  }
+}
+.single-news__social{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  @media screen and (max-width: 576px){
+    margin: 40px 0 0;
+  }
+}
+.single-news__social-item{
+  &+&{
+    margin: 0 0 0 16px;
+  }
+}
+.single-news__social-link{
+
+}
+.single-news__author{
+  font-style: normal;
+  font-weight: bold;
+  @media screen and (max-width: 576px){
+   align-self: flex-end;
+  }
+}

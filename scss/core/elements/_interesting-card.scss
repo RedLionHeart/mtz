@@ -1,0 +1,71 @@
+.interesting{
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 991px){
+    margin: 0;
+  }
+  &:hover .interesting__img{
+    transform: scale(1.05);
+  }
+}
+.interesting__img-container{
+  border-radius: 4px;
+  overflow: hidden;
+  height: 240px;
+  flex: 0 0 calc((100% - 60px) * .455);
+  max-width: calc((100% - 60px) * .455);
+  margin: 0 30px 0 0;
+  @media screen and (max-width: 991px){
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  @media screen and (max-width: 576px){
+    height: 192px;
+  }
+}
+.interesting__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+}
+.interesting__content{
+  flex: 0 0 calc((100% - 60px) * .545);
+  max-width: calc((100% - 60px) * .545);
+  @media screen and (max-width: 991px){
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 8px 0 0;
+  }
+}
+.interesting__title{
+  font-weight: 700;
+}
+.interesting__description{
+  margin: 14px 0 0;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  @media screen and (max-width: 576px){
+    display: none;
+  }
+}
+.interesting__link{
+  position: relative;
+  margin: 44px 0 0;
+  @media screen and (max-width: 991px){
+   margin: 24px 0 0;
+  }
+  @media screen and (max-width: 576px){
+    margin: 14px 0 0;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    background: url("../images/base/arrow-link.svg") no-repeat center/contain;
+    width: 3px;
+    height: 6px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

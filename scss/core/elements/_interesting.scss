@@ -1,0 +1,40 @@
+.interesting{
+
+}
+.interesting__container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -30px;
+  @media screen and (max-width: 1440px){
+    margin: 0 -15px;
+  }
+  @media screen and (max-width: 991px){
+    margin: 0;
+  }
+}
+.interesting__item{
+  margin: 0 30px;
+  flex: 0 0 calc((100% - 240px) / 4);
+  max-width: calc((100% - 240px) / 4);
+  @media screen and (max-width: 1440px){
+    flex: 0 0 calc((100% - 120px) / 4);
+    max-width: calc((100% - 120px) / 4);
+    margin: 0 15px;
+  }
+  @media screen and (max-width: 991px){
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0 0 24px;
+  }
+  &:not(:last-of-type){
+    @media screen and (max-width: 991px){
+      padding: 0 0 20px;
+      border-bottom: 2px solid $color-thin-line;
+    }
+  }
+}
+.interesting__item:last-of-type{
+  @media screen and (max-width: 991px){
+    margin: 0;
+  }
+}

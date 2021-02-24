@@ -1,0 +1,13 @@
+.social-link{
+  display: block;
+  transition: opacity .2s ease-in-out;
+  &:hover{
+    opacity: .7;
+  }
+  &:active{
+    opacity: 1;
+  }
+}
+.social-link__img{
+
+}

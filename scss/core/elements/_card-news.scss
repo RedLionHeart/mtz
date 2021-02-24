@@ -1,0 +1,26 @@
+.card-news{
+
+}
+.card-news__info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-news__date{
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: $color-grey;
+}
+.card-news__mark{
+  color: $color-tag;
+  text-transform: uppercase;
+}
+.card-news__title{
+  margin: 10px 0 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  @media screen and (max-width: 768px){
+    margin: 8px 0 0;
+    font-weight: 400;
+  }
+}

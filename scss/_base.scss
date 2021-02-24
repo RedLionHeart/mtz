@@ -1,0 +1,69 @@
+/*Общие стили*/
+
+*{
+  box-sizing: border-box;
+}
+html{
+  --settings-font-size: 16px;
+  font-size: var(--settings-font-size);
+}
+body{
+  font-family: $font-montserrat;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-black;
+  font-size: 1rem;
+}
+h1,h2,h3,h4,h5{
+  margin:0;
+}
+main{
+
+}
+a{
+  text-decoration: none;
+  display:inline-block;
+  outline: none;
+  cursor: pointer;
+  color: $color-black;
+}
+
+.box{
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 66px;
+  margin: 0 auto;
+  @media screen and (max-width: 1440px){
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+  @media screen and (max-width: 1199px){
+    max-width: 992px;
+    padding: 0 24px;
+  }
+  @media screen and (max-width: 991px){
+    max-width:768px;
+  }
+  @media screen and (max-width: 768px){
+    max-width:100%;
+  }
+}
+
+ul,li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+img{
+  max-width:100%;
+  height:auto;
+  display: block;
+}
+button{
+  outline: none;
+  border:none;
+  padding: 0;
+}
+p{
+  margin:0;
+}
